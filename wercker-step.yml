@@ -1,0 +1,30 @@
+name: wait-mysql
+version: 0.1.0
+description: wait for mysql service
+keywords:
+  - mysql
+properties:
+  sleep:
+    type: int
+    required: false
+    default: 10
+  host:
+    type: string
+    required: optional
+    default: "$MYSQL_PORT_3306_TCP_ADDR"
+  port:
+    type: int
+    required: optional
+    default: "$MYSQL_PORT_3306_TCP_PORT"
+  user:
+    type: string
+    required: optional
+    default: "root"
+  password:
+    type: string
+    required: optional
+    default: "$MYSQL_ENV_MYSQL_ROOT_PASSWORD"
+  database:
+    type: string
+    required: optional
+    default: "$MYSQL_ENV_MYSQL_DATABASE"
