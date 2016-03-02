@@ -1,0 +1,11 @@
+box: kotamat/laravel
+services:
+  - id: mysql
+    env:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_USER: user
+      MYSQL_PASSWORD: secret
+      MYSQL_DATABASE: db
+build:
+  steps:
+    - kotamat/wait-mysql:
