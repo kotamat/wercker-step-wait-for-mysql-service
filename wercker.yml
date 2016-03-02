@@ -8,4 +8,4 @@ services:
       MYSQL_DATABASE: db
 build:
   steps:
-    - kotamat/wait-mysql:
+    - kotamat/wait-mysql
